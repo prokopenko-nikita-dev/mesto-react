@@ -40,7 +40,7 @@ At this stage of the project, we are transferring all the functionality written 
 
 Clone a repository:
 
-    git clone https://github.com/ia-stepanov/mesto-react.git
+    git clone git@github.com:prokopenko-nikita-dev/mesto-react.git
 
 Install dependencies:
 
