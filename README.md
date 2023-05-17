@@ -56,7 +56,7 @@ Launch the application:
 
 ## Libraries:
 
--  Reactos
+-  React
 
 ## Link to the website:
 https://prokopenko-nikita-dev.github.io/mesto-react/
