@@ -50,16 +50,15 @@ function App() {
       <Footer />
       <PopupWithForm isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} name={"edit"} title={"Редактировать профиль"} buttonText={"Сохранить"}>
         <div className="popup__form-group">
-          <input value={profileUserInfo.name} type="text" name="user-name" className="popup__input popup__input_type_name" required minLength="2"
+          <input  placeholder="Имя" type="text" name="user-name" className="popup__input popup__input_type_name" required minLength="2"
             maxLength="40" />
           <span className="popup__input-error" id="user-name-error">Вы пропустили это поле</span>
         </div>
         <div className="popup__form-group">
-          <input value={profileUserInfo.about} type="text" name="user-prof" className="popup__input popup__input_type_prof" required minLength="2"
+          <input placeholder="Занятие" type="text" name="user-prof" className="popup__input popup__input_type_prof" required minLength="2"
             maxLength="200" />
           <span className="popup__input-error" id="user-prof-error">Вы пропустили это поле</span>
         </div>
-        <button type="submit" className="popup__save-button" ></button>
       </PopupWithForm>
 
       <PopupWithForm isOpen={isAddPlacePopupOpen} onClose={closeAllPopups} name={"add"} title={"Новое место"} buttonText={"Создать"}>
@@ -73,7 +72,6 @@ function App() {
             className="popup__input popup__input_type_prof" />
           <span className="popup__input-error" id="src-error">Введите адрес сайта</span>
         </div>
-        <button type="submit" className="popup__save-button popup__save-button_disabled"  disabled ></button>
       </PopupWithForm>
 
       <PopupWithForm isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} name={"editAvatar"} title={"Обновить аватар"} buttonText={"Сохранить"}>
@@ -82,7 +80,6 @@ function App() {
             className="popup__input popup__input_type_avatar" />
           <span className="popup__input-error" id="link-error">Введите адрес сайта</span>
         </div>
-        <button type="submit" className="popup__save-button popup__save-button_disabled"  disabled></button>
       </PopupWithForm>
 
       <PopupWithForm
