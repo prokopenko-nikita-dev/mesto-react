@@ -9,7 +9,7 @@ function Card({ card, onCardClick }) {
     <li className="cards">
       <div className="cards__container">
         <img className="cards__img" src={card?.link || ""} alt={card && card.name} onClick={handleCardClick} />
-        <button type="button" className="cards__trash cards__trash_inactive"></button>
+        <button type="button" className="cards__trash"></button>
       </div>
       <div className="cards__info">
         <h2 className="cards__info-heading">{card.name}</h2>
