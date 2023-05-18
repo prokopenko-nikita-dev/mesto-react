@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/mesto-react/static/css/main.1e62c3b5.css",
+    "main.js": "/mesto-react/static/js/main.c0ef20cf.js",
+    "static/js/47.67a65c19.chunk.js": "/mesto-react/static/js/47.67a65c19.chunk.js",
+    "static/media/Inter-Medium.woff": "/mesto-react/static/media/Inter-Medium.6dcbc9bed1ec438907ee.woff",
+    "static/media/Inter-Medium.woff2": "/mesto-react/static/media/Inter-Medium.6dcbc9bed1ec438907ee.woff2",
+    "static/media/Inter-Black.woff": "/mesto-react/static/media/Inter-Black.b2a2b192860f79c0b89c.woff",
+    "static/media/Inter-Black.woff2": "/mesto-react/static/media/Inter-Black.b2a2b192860f79c0b89c.woff2",
+    "static/media/Inter-Regular.woff": "/mesto-react/static/media/Inter-Regular.a416f4674fad5f019461.woff",
+    "static/media/Inter-Regular.woff2": "/mesto-react/static/media/Inter-Regular.a416f4674fad5f019461.woff2",
+    "static/media/Header_logo.svg": "/mesto-react/static/media/Header_logo.bad0f45a85a7a8272e00.svg",
+    "static/media/deactive.svg": "/mesto-react/static/media/deactive.87ed371465c7a6a1cd01.svg",
+    "index.html": "/mesto-react/index.html",
+    "static/media/Delete.svg": "/mesto-react/static/media/Delete.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/like__active.svg": "/mesto-react/static/media/like__active.fe17a515669479b1e649.svg",
+    "static/media/Edit_Button.svg": "/mesto-react/static/media/Edit_Button.8667ac4a523e8fc42e59.svg",
+    "static/media/painsile.svg": "/mesto-react/static/media/painsile.a086f758840ae814ecde.svg",
+    "static/media/Close_Icon.svg": "/mesto-react/static/media/Close_Icon.2ceb783afbab75916ddc.svg",
+    "static/media/plus_add-buttom.svg": "/mesto-react/static/media/plus_add-buttom.d86bb2edc2f6eadb96b7.svg",
+    "main.1e62c3b5.css.map": "/mesto-react/static/css/main.1e62c3b5.css.map",
+    "main.c0ef20cf.js.map": "/mesto-react/static/js/main.c0ef20cf.js.map",
+    "47.67a65c19.chunk.js.map": "/mesto-react/static/js/47.67a65c19.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e62c3b5.css",
+    "static/js/main.c0ef20cf.js"
+  ]
+}
