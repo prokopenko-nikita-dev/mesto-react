@@ -3,7 +3,7 @@ import api from "../utils/Api.js";
 import Card from "./Card.js";
 
 function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick }) {
-  const [profileUserInfo, setProfileUserInfo] = useState("");
+  const [profileUserInfo, setProfileUserInfo] = useState({});
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
