@@ -49,7 +49,7 @@ class Api {
             .then(res => { return this._getOriginalResponse(res) })
     }
 
-    editAvatar({ avatar }) {
+    setUserAvatar({ avatar }) {
         return fetch(this._baseUrl + '/users/me/avatar', {
             method: 'PATCH',
             headers: this._headers,
@@ -68,17 +68,9 @@ class Api {
             .then(res => { return this._getOriginalResponse(res) })
     }
 
-    likeCard(id) {
+    changeLikeCardStatus(id, status) {
         return fetch(this._baseUrl + '/cards/' + id + '/likes', {
-            method: 'PUT',
-            headers: this._headers,
-        })
-            .then(res => { return this._getOriginalResponse(res) })
-    }
-
-    unlikeCard(id) {
-        return fetch(this._baseUrl + '/cards/' + id + '/likes', {
-            method: 'DELETE',
+            method: status ? 'PUT' : 'DELETE',
             headers: this._headers,
         })
             .then(res => { return this._getOriginalResponse(res) })
