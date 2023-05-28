@@ -12,6 +12,11 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace }) {
         onAddPlace(nameRef.current.value, linkRef.current.value)
     }
 
+    useEffect(() => {
+        nameRef.current.value = ''
+        linkRef.current.value = ''
+      }, [isOpen]);
+
     return (
         <PopupWithForm onSubmit={handleSubmit} isOpen={isOpen} onClose={onClose} name={"add"} title={"Новое место"} buttonText={"Создать"}>
             <input ref={nameRef} required minLength="2" maxLength="30" type="text" id="text" placeholder="Название" name="title"

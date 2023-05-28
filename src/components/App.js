@@ -83,27 +83,31 @@ function App() {
     const isLiked = card.likes.some(i => i._id === currentUser._id);
 
     // Отправляем запрос в API и получаем обновлённые данные карточки
-    api.changeLikeCardStatus(card._id, !isLiked).then((newCard) => {
+    api.changeLikeCardStatus(card._id, !isLiked)
+    .then((newCard) => {
       // Формируем новый массив на основе имеющегося, подставляя в него новую карточку
       const newCards = cards.map((c) => c._id === card._id ? newCard : c);
       // Обновляем стейт
       setCards(newCards);
-    });
+    })
+    .catch((error) => console.log(error))
   }
 
   function handleCardDelete(card) {
-    api.deleteCard(card._id).then((newCard) => {
+    api.deleteCard(card._id)
+    .then((newCard) => {
       // Формируем новый массив на основе имеющегося, подставляя в него новую карточку
       const newCards = cards.filter((c) => c._id !== card._id);
       // Обновляем стейт
       setCards(newCards);
-    });
+    })
+    .catch((error) => console.log(error))
   }
 
   function handleAddPlaceSubmit(name, link) {
     api.addCard(name, link).then((newCard) => {
 
-      setCards([...cards, newCard]);;
+      setCards([newCard, ...cards]);
     })
     .catch((error) => console.log(error))
     .finally(() => closeAllPopups());
